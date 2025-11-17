@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         navbar.innerHTML = `
             <div class="container">
-                <a class="navbar-brand" href="index.html">Oexa Dental Clinic</a>
+                <a class="navbar-brand" href="index.html">OEXA Dental Clinic</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,7 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             <a class="nav-link ${currentPage === 'services.html' ? 'active' : ''}" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ${currentPage === 'contact.html' ? 'active' : ''}" href="contact.html">Contact</a>
+                            <a class="nav-link ${currentPage === 'staff.html' ? 'active' : ''}" href="staff.html">Our Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ${currentPage === 'book-appointment.html' ? 'active' : ''}" href="book-appointment.html">Book Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ${currentPage === 'contact.html' ? 'active' : ''}" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -31,4 +37,3 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 });
-

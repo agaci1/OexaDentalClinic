@@ -30,5 +30,30 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         // You can add a scroll-to-top button here if needed
     });
+
+    // Scroll-triggered animations for About page
+    const slideDownElements = document.querySelectorAll('.slide-down');
+    
+    if (slideDownElements.length > 0) {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('animate');
+                    }, index * 200);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        slideDownElements.forEach(element => {
+            observer.observe(element);
+        });
+    }
 });
 

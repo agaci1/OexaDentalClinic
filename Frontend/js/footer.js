@@ -16,12 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="staff.html">Our Staff</a></li>
+                            <li><a href="book-appointment.html">Book Appointment</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-3">
                         <h5>Contact Info</h5>
-                        <p>123 Dental Street<br>City, State 12345<br>Phone: (555) 123-4567<br>Email: info@oexadental.com</p>
+                        <p>📍 [Add your clinic address here]<br>📱 WhatsApp: +355 [your number]<br>📸 Instagram: @oexadentalclinic<br>📧 Email: info@oexadental.com</p>
                     </div>
                 </div>
                 <hr class="my-4">
