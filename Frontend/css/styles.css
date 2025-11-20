@@ -1,4 +1,3 @@
-/* Color Scheme Variables */
 :root {
     --turquoise: #40E0D0;
     --light-blue: #87CEEB;
@@ -7,7 +6,6 @@
     --light-turquoise-bg: #E0F7FA;
 }
 
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,11 +19,32 @@ body {
     background-color: var(--light-turquoise-bg);
 }
 
-/* Navbar Styles */
+.home-background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/staffPictureOexa.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.4) 0%, rgba(64, 224, 208, 0.3) 100%);
+}
+
 .navbar {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 1rem 0;
     background-color: #fff !important;
+    z-index: 1000;
 }
 
 .navbar-brand {
@@ -46,48 +65,59 @@ body {
     color: var(--turquoise) !important;
 }
 
-/* Hero Section */
 .hero-section {
-    position: relative;
-    padding-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     z-index: 0;
+    background-image: url('../assets/images/oexaLogo.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(224, 247, 250, 0.75) 0%, rgba(135, 206, 235, 0.75) 100%);
+.welcome-section {
+    background-color: var(--light-turquoise-bg);
+    position: relative;
+    z-index: 1;
+    margin-top: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.carousel-section {
+    background-color: var(--light-turquoise-bg);
+    position: relative;
     z-index: 1;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
+.carousel-section .carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-.hero-section img {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+.carousel-section .carousel-item img {
+    height: 500px;
+    object-fit: cover;
 }
 
-/* Services Section */
+.carousel-section .carousel-control-prev,
+.carousel-section .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-section .carousel-indicators button {
+    background-color: var(--dark-blue);
+}
+
 .services-section {
     background-color: var(--light-turquoise-bg);
+    position: relative;
+    z-index: 1;
 }
 
 .services-section .card {
@@ -108,14 +138,106 @@ body {
     font-weight: 600;
 }
 
-/* About Hero Section */
+.service-card-general,
+.service-card-orthodontics,
+.service-card-cosmetic,
+.service-card-pediatric,
+.service-card-surgery {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card-general::before,
+.service-card-orthodontics::before,
+.service-card-cosmetic::before,
+.service-card-pediatric::before,
+.service-card-surgery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.service-card-general .card-body,
+.service-card-orthodontics .card-body,
+.service-card-cosmetic .card-body,
+.service-card-pediatric .card-body,
+.service-card-surgery .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+.service-card-general:hover::before,
+.service-card-orthodontics:hover::before,
+.service-card-cosmetic:hover::before,
+.service-card-pediatric:hover::before,
+.service-card-surgery:hover::before {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.service-card-general .card-title,
+.service-card-orthodontics .card-title,
+.service-card-cosmetic .card-title,
+.service-card-pediatric .card-title,
+.service-card-surgery .card-title,
+.service-card-general .card-text,
+.service-card-orthodontics .card-text,
+.service-card-cosmetic .card-text,
+.service-card-pediatric .card-text,
+.service-card-surgery .card-text,
+.service-card-general .text-muted,
+.service-card-orthodontics .text-muted,
+.service-card-cosmetic .text-muted,
+.service-card-pediatric .text-muted,
+.service-card-surgery .text-muted,
+.service-card-general .list-unstyled,
+.service-card-orthodontics .list-unstyled,
+.service-card-cosmetic .list-unstyled,
+.service-card-pediatric .list-unstyled,
+.service-card-surgery .list-unstyled {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.service-card-general .card-title,
+.service-card-orthodontics .card-title,
+.service-card-cosmetic .card-title,
+.service-card-pediatric .card-title,
+.service-card-surgery .card-title {
+    font-weight: 600;
+}
+
+.service-card-general {
+    background-image: url('../assets/images/photo113.jpg');
+}
+
+.service-card-orthodontics {
+    background-image: url('../assets/images/photo112.jpg');
+}
+
+.service-card-cosmetic {
+    background-image: url('../assets/images/photo111.jpg');
+}
+
+.service-card-pediatric {
+    background-image: url('../assets/images/photo114.jpg');
+}
+
+.service-card-surgery {
+    background-image: url('../assets/images/photo115.jpg');
+}
+
 .about-hero-section {
     position: relative;
     min-height: 100vh;
     background: url('../assets/images/staffPictureOexa.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -141,85 +263,29 @@ body {
 .about-title {
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    animation: slideDown 1s ease-out;
 }
 
-/* About Content Section */
 .about-content-section {
     background-color: #fff;
     padding-top: 4rem;
 }
 
-/* Slide Down Animation */
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.slide-down {
-    opacity: 0;
-    transform: translateY(-50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.slide-down.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.about-text-content {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    margin-top: -100px;
-    position: relative;
-    z-index: 3;
-}
-
-.about-section img {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Contact Section */
-.contact-section {
+.contact-section,
+.staff-section,
+.appointment-section {
     padding-top: 80px;
     background-color: var(--light-turquoise-bg);
 }
 
-.contact-section .card {
+.contact-section .card,
+.staff-card,
+.appointment-section .card {
     border: none;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     background-color: #fff;
-}
-
-.contact-section .form-control {
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    padding: 0.75rem;
-}
-
-.contact-section .form-control:focus {
-    border-color: var(--turquoise);
-    box-shadow: 0 0 0 0.2rem rgba(64, 224, 208, 0.25);
-}
-
-/* Staff Section */
-.staff-section {
-    padding-top: 80px;
-    background-color: var(--light-turquoise-bg);
 }
 
 .staff-card {
-    background-color: #fff;
-    border: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -227,21 +293,6 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 5px 20px rgba(30, 58, 138, 0.2);
     border-top: 3px solid var(--light-orange);
-}
-
-.staff-avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--turquoise) 0%, var(--light-blue) 100%);
-    color: var(--dark-blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .staff-card .card-title {
@@ -254,30 +305,17 @@ body {
     font-weight: 500;
 }
 
-/* Appointment Section */
-.appointment-section {
-    padding-top: 80px;
-    background-color: var(--light-turquoise-bg);
-}
-
-.appointment-section .card {
-    background-color: #fff;
-    border: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
+.contact-section .form-control,
 .appointment-section .form-control {
     border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.75rem;
 }
 
+.contact-section .form-control:focus,
 .appointment-section .form-control:focus {
     border-color: var(--turquoise);
     box-shadow: 0 0 0 0.2rem rgba(64, 224, 208, 0.25);
-}
-
-/* Contact Info Section */
-.contact-info-card {
-    background-color: #fff;
 }
 
 .contact-item {
@@ -314,11 +352,6 @@ body {
     color: var(--dark-blue);
 }
 
-/* Social Media Section */
-.social-media-card {
-    background-color: #fff;
-}
-
 .social-media-links {
     display: flex;
     flex-direction: column;
@@ -351,7 +384,6 @@ body {
 .social-link.facebook:hover {
     background-color: #1877F2;
     color: #fff;
-    border-color: #1877F2;
 }
 
 .social-link.instagram {
@@ -362,7 +394,6 @@ body {
 .social-link.instagram:hover {
     background-color: #E4405F;
     color: #fff;
-    border-color: #E4405F;
 }
 
 .social-link.twitter {
@@ -373,7 +404,6 @@ body {
 .social-link.twitter:hover {
     background-color: #1DA1F2;
     color: #fff;
-    border-color: #1DA1F2;
 }
 
 .social-link.linkedin {
@@ -384,7 +414,6 @@ body {
 .social-link.linkedin:hover {
     background-color: #0077B5;
     color: #fff;
-    border-color: #0077B5;
 }
 
 .social-link.youtube {
@@ -395,7 +424,6 @@ body {
 .social-link.youtube:hover {
     background-color: #FF0000;
     color: #fff;
-    border-color: #FF0000;
 }
 
 .map-placeholder {
@@ -405,10 +433,11 @@ body {
     text-align: center;
 }
 
-/* Footer */
 footer {
     margin-top: auto;
     background-color: var(--dark-blue) !important;
+    position: relative;
+    z-index: 10;
 }
 
 footer .container {
@@ -426,7 +455,6 @@ footer a:hover {
     color: var(--turquoise);
 }
 
-/* Buttons */
 .btn-primary {
     background: linear-gradient(135deg, var(--turquoise) 0%, var(--light-blue) 100%);
     border: none;
@@ -443,29 +471,32 @@ footer a:hover {
     color: var(--dark-blue);
 }
 
-.btn-outline-primary {
-    background: linear-gradient(135deg, var(--turquoise) 0%, var(--light-blue) 100%);
-    border: none;
-    color: var(--dark-blue);
-    padding: 0.75rem 2rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-primary:hover {
-    background: linear-gradient(135deg, var(--light-blue) 0%, var(--turquoise) 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(64, 224, 208, 0.4);
-    color: var(--dark-blue);
-}
-
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-/* Responsive Styles */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+section {
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 768px) {
     .hero-section {
         text-align: center;
@@ -488,42 +519,3 @@ footer a:hover {
         margin: 0.25rem 0;
     }
 }
-
-/* Utility Classes */
-.min-vh-100 {
-    min-height: 100vh;
-}
-
-.text-primary {
-    color: var(--dark-blue) !important;
-}
-
-.text-turquoise {
-    color: var(--turquoise) !important;
-}
-
-.bg-light-turquoise {
-    background-color: var(--light-turquoise-bg) !important;
-}
-
-/* Card Styles */
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card-body {
-    padding: 2rem;
-}
-
-/* Section Spacing */
-section {
-    padding: 4rem 0;
-}
-
-/* Image Styles */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
