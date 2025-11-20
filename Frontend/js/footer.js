@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5>Contact Info</h5>
-                    <p>📍 Tirane Delijorgji<br>📱 WhatsApp: +355 69 68 67 665<br>📸 Instagram: @oexadentalclinic<br>📧 Email: info@oexadental.com</p>
+                    <p> Tirane Delijorgji<br> WhatsApp: +355 69 68 67 665<br> Instagram: @oexadentalclinic<br> Email: info@oexadental.com</p>
                 </div>
             </div>
             <hr class="my-4">
