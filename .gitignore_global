@@ -1,0 +1,16 @@
+# .NET build output
+**/bin/
+**/obj/
+
+# user-specific
+*.user
+*.suo
+.vscode/
+
+# macOS
+.DS_Store
+
+# secrets (keep local only)
+**/appsettings.Development.json
+
+
