@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>URL</key>
-	<string>https://github.com/agaci1/OexaDentalClinic/blob/main/user-stories.md</string>
-</dict>
-</plist>
+# User Stories
+
+1. As a patient, I want to create an account so that I can use the system.
+2. As a patient, I want to book an appointment so that I can visit a dentist.
+3. As a patient, I want to cancel an appointment if I cannot attend.
+4. As a patient, I want to rate the dentist after the appointment.
+5. As a dentist, I want to see my scheduled appointments so that I know which patients I will treat.
+6. As a dentist, I want to mark an appointment as completed.
+7. As a manager, I want to manage dentists so that the clinic staff is organized.
+8. As a patient, I want to receive email notifications when my appointment status changes.
+
