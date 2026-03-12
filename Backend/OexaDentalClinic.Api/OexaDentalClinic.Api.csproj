@@ -1,23 +1,37 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
+  <!-- Uses the ASP.NET Core Web SDK -->
 
   <PropertyGroup>
+    <!-- Target .NET runtime/framework -->
     <TargetFramework>net10.0</TargetFramework>
+
+    <!-- Enables nullable reference types -->
     <Nullable>enable</Nullable>
+
+    <!-- Automatically includes common using statements -->
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Core Entity Framework package -->
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.2" />
+
+    <!-- EF Core design-time tools (migrations, scaffolding) -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.2">
+      <!-- Prevents this package from being included in runtime output -->
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+
+    <!-- EF Core command-line tools -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.2">
+      <!-- Used only during development -->
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
 
     <!-- MySQL provider (Oracle, EF 10 compatible) -->
     <PackageReference Include="MySql.EntityFrameworkCore" Version="10.0.1" />
 
+    <!-- Swagger / OpenAPI support -->
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
