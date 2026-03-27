@@ -27,6 +27,8 @@ The system includes three main users:
 * Dentist schedule management
 * Dentist ratings
 * Email notifications for appointments
+* Marketer offers for client's
+  
 
 ## Email Notification Service
 
