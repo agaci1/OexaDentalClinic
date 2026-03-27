@@ -28,7 +28,10 @@ The system includes three main users:
 * Dentist ratings
 * Email notifications for appointments
 * Marketer offers for client's
-  
+* Special appointments for children
+* Appointment reminders via email
+* Treatment history for each patient
+* Patient dashboard
 
 ## Email Notification Service
 
