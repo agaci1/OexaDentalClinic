@@ -17,7 +17,9 @@ The system includes three main users:
 * Patient
 * Dentist
 * Manager (Admin)
+* Marketer
 
+  
 ## Main Features
 
 * Appointment booking
@@ -25,6 +27,11 @@ The system includes three main users:
 * Dentist schedule management
 * Dentist ratings
 * Email notifications for appointments
+* Marketer offers for client's
+* Special appointments for children
+* Appointment reminders via email
+* Treatment history for each patient
+* Patient dashboard
 
 ## Email Notification Service
 
@@ -33,3 +40,4 @@ The system sends automatic email notifications when:
 * an appointment is booked
 * an appointment is cancelled
 * an appointment is completed
+* an appointment schedueled based on client's requests
