@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="col-md-4 mb-3">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="staff.html">Our Staff</a></li>
-                        <li><a href="book-appointment.html">Book Appointment</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="../portal/login.html">Staff Login</a></li>
+                        <li><a href="../user/index.html">Home</a></li>
+                        <li><a href="../user/about.html">About Us</a></li>
+                        <li><a href="../user/services.html">Services</a></li>
+                        <li><a href="../user/staff.html">Our Staff</a></li>
+                        <li><a href="../user/book-appointment.html">Book Appointment</a></li>
+                        <li><a href="../user/contact.html">Contact Us</a></li>
+                        <li><a href="admin-appointments.html">Admin</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
@@ -33,3 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
 });
+
