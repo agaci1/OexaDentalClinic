@@ -1,27 +1,34 @@
 Dentist Module
 User Stories
-As a dentist, I want to view my schedule so that I can see all upcoming appointments.
-As a dentist, I want to accept or confirm appointments so that I can manage my availability.
-As a dentist, I want to add treatment details so that patient records are updated properly.
+As a dentist, I want to view my scheduled appointments so that I know which patients I will treat.
+As a dentist, I want to accept or confirm appointments so that I can manage my schedule efficiently.
+As a dentist, I want to mark an appointment as completed so that I can keep records up to date.
+As a dentist, I want to view patient records and history so that I can provide accurate treatment.
+As a dentist, I want to update treatments and diagnoses so that patient information is correct and complete.
 
 Extended / Alternative Scenarios
-If there are no appointments, the system should display a message like “No appointments scheduled.”
-If there is an error saving treatment, the system should show an error message and allow retry.
+If there are no scheduled appointments, the system displays: “No appointments scheduled.”
+If a patient record is not found, the system shows an error message.
+If there is an error updating treatment or diagnosis, the system shows an error message and allows retry.
 
-Use Case: Manage Appointments
+Use Case: Manage Appointments and Treatments
 Actor: Dentist
 
 Main Flow:
 Dentist logs into the system
-Dentist views schedule
+Dentist views scheduled appointments
 Dentist selects an appointment
-Dentist accepts/confirms the appointment
-Dentist adds treatment details
-System saves the treatment successfully
+Dentist accepts or confirms the appointment
+Dentist views patient records and history
+Dentist updates treatment and diagnosis
+Dentist marks the appointment as completed
+System saves all changes successfully
 
 Alternative Flows:
-No Appointments:
-→ System shows “No appointments available”
-Error Saving Treatment:
-→ System shows error message
-→ Dentist retries saving or edits data
+No Appointments Available:
+→ System displays: “No appointments scheduled”
+Patient Record Not Found:
+→ System displays error message
+Error Saving Treatment/Diagnosis:
+→ System displays error message
+→ Dentist retries or edits information
