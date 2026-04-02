@@ -26,9 +26,9 @@ System saves all changes successfully
 
 Alternative Flows:
 No Appointments Available:
-→ System displays: “No appointments scheduled”
+System displays: “No appointments scheduled”
 Patient Record Not Found:
-→ System displays error message
+System displays error message
 Error Saving Treatment/Diagnosis:
-→ System displays error message
-→ Dentist retries or edits information
+System displays error message
+Dentist retries or edits information
