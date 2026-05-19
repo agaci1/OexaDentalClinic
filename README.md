@@ -1,70 +1,50 @@
 # Oexa Dental Clinic
-### Dental Clinic Management System
+Dental Clinic Management System
+ #Project Overview
+
+The Dental Clinic Management System is a web-based application designed to improve and simplify daily operations in a dental clinic. It provides a centralized platform for managing patients, appointments, and dentists efficiently.
+
+Patients can easily book appointments online by selecting available time slots, dentists, and services. They can also view, update, or cancel their bookings at any time.
+
+Dentists can access their daily and weekly schedules in real time, helping them better organize their workflow and manage patient appointments effectively.
+
+Managers (Admins) have full control over the system, including user management, appointment oversight, and clinic operations coordination.
+
+Overall, the system aims to digitize clinic workflows, improve communication, and increase operational efficiency.
+
+# Actors
+Patient
+Dentist
+Manager (Admin)
+Marketer
+# Main Features
+Online appointment booking
+Appointment cancellation & updates
+Dentist schedule management
+Patient dashboard
+Treatment history tracking
+Dentist ratings system
+Email notifications
+Appointment reminders
+Special appointments for children
+Marketing offers for patients
+# Email Notification Service
+
+The system automatically sends email notifications for:
+
+Appointment booking
+Appointment cancellation
+Appointment completion
+Appointment scheduling updates
+# Project Goals
+Digitalize clinic operations
+Reduce manual scheduling
+Improve communication between staff and patients
+Increase efficiency and organization
+#] Technologies (optional section you can add)
 
 
-## Project Overview
-The Dental Clinic Management System is a simple web-based system designed to support and improve the daily operations of a dental clinic. It provides a structured way to manage appointments, patients, and dentists in a single digital platform.
 
-The system allows patients to easily book appointments online by selecting available time slots, dentists, and services. It also enables patients to manage their appointments by viewing upcoming bookings and cancelling or updating them when necessary.
-
-For dentists, the system provides a clear overview of their daily and weekly schedules, helping them organize their working time more efficiently and stay updated with patient appointments in real time.
-
-For managers, the system offers tools to oversee clinic operations, manage users, and ensure that all appointments and resources are properly organized. This improves communication between staff members and reduces the need for manual scheduling.
-
-Overall, the system aims to digitize and simplify the workflow of a dental clinic while improving efficiency, organization, and communication between all users.
-
-## Actors
-- Patient  
-- Dentist  
-- Manager (Admin)  
-- Marketer  
-
-## Main Features
-• Appointment booking  
-• Appointment cancellation  
-• Dentist schedule management  
-• Dentist ratings  
-• Email notifications for appointments  
-• Marketer offers for clients  
-• Special appointments for children  
-• Appointment reminders via email  
-• Treatment history for each patient  
-• Patient dashboard  
-
-## 📧 Email Notification Service
-The system sends automatic email notifications when:
-
-• an appointment is booked  
-• an appointment is cancelled  
-• an appointment is completed  
-• an appointment is scheduled based on client requests  
-
-This system provides an efficient and organized solution for managing dental clinic operations and improves communication between patients, dentists, and administrators.
-
-
-
-
-
-
-# Oexa Dental Clinic Management System
-
-## Overview
-This project is a full-stack dental clinic management system that allows managing patients, appointments, and payments.
-
-## Features
-- User authentication (Login/Register)
-- Patient management
-- Appointment scheduling
-- Payment handling
-- Admin dashboard
-
-## Tech Stack
-- Backend: (add your tech here - e.g., ASP.NET / Node.js / Java)
-- Frontend: (React / Angular / etc.)
-- Database: (MySQL / SQL Server / etc.)
-
-## How to Run
-
-### Backend
-1. Open Backend folder
-2. Run the server using your IDE or:
+Frontend: HTML, CSS, JavaScript
+Backend: (Node.js / PHP / Java – sipas projektit tuaj)
+Database: MySQL / PostgreSQL
